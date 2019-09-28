@@ -7,14 +7,18 @@ class BusinessCard extends Component {
     render(){
         return(
             <center>
-            <div>
-                <h1>business card</h1>
-                <h2>First Name: {this.props.fname}</h2>
-                <h2>Last Name: {this.props.lname}</h2>
-                <h2>AdDress: {this.props.address}</h2>
-                <h2>Email: {this.props.email}</h2>
-                <h2>Phone Number: {this.props.pnumber}</h2>
-            </div>
+                <div class = "box2">
+                    <div class = "card">
+                        <h1 class ="bc">business card</h1>
+                        <h2> {this.props.fname} {this.props.lname}</h2>
+                        <h2> {this.props.address}</h2>
+                        <h2>{this.props.email}</h2>
+                        <h2> {this.props.pnumber}</h2>
+                    </div>
+                    <div class = "logo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo_IkLuvfuZSocZz_rIQSdPWjt5mVVYsamk9kVkXB9t8NRSUbM-A"></img>
+                    </div>
+                </div>
             </center>
         )
     }
